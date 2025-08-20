@@ -14,7 +14,7 @@ reddit = praw.Reddit(
 
 @app.route("/")
 def home():
-    return jsonify({"message": "Hello from the Flask backend!"})
+    return jsonify({"message": "Hello from the Reddit backend!"})
 
 @app.route("/analyze", methods=["POST"])
 def analyze():
